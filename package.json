@@ -1,0 +1,20 @@
+{
+  "name": "visual",
+  "description": "default_template_value",
+  "repository": {
+    "type": "default_template_value",
+    "url": "default_template_value"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "npx powerbi-visuals-tools start",
+    "package": "npx powerbi-visuals-tools package"
+  },
+  "dependencies": {
+    "powerbi-visuals-api": "5.1.0"
+  },
+  "devDependencies": {
+    "ts-loader": "6.1.0",
+    "typescript": "3.6.3"
+  }
+}

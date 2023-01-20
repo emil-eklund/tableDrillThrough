@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "tableDrillThrough",
+        "displayName": "tableDrillThrough",
+        "guid": "tableDrillThroughCB1E9E4B415346AAB8FDA3BC5CF8451E",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "debug",
+        "supportUrl": "debug",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "5.1.0",
+    "author": {
+        "name": "unknown",
+        "email": "unknown"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
