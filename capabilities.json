@@ -26,5 +26,15 @@
             }
         }
     ],
-    "privileges": []
+    "privileges": [],
+    "tooltips": {
+        "roles": [
+            "values"
+        ],
+        "supportedTypes": {
+            "canvas": true,
+            "default": true
+        },
+        "supportEnhancedTooltips": true
+    }
 }

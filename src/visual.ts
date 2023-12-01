@@ -46,7 +46,7 @@ export class Visual implements IVisual {
                 valueCell.textContent = String(item);
                 rowElement.appendChild(valueCell);
             }
-            
+
             const selectionId = this.host.createSelectionIdBuilder()
                 .withTable(dataview.table, rowIndex)
                 .createSelectionId();
@@ -62,6 +62,26 @@ export class Visual implements IVisual {
                 event.preventDefault();
                 return false;
             })
+
+            // Add event listener on hovering to show or hide tooltips
+            rowElement.addEventListener("mouseenter", (event) => {
+                if (this.host.tooltipService.enabled()) {
+
+                    const tooltipInfo: powerbi.extensibility.VisualTooltipDataItem[] = row.map((value, index) => {
+                        return {
+                            displayName: dataview.table.columns[index].displayName,
+                            value: String(value)
+                        }
+                    });
+
+                    this.host.tooltipService.show({
+                        coordinates: [event.x, event.y],
+                        isTouchEvent: true,
+                        dataItems: tooltipInfo,
+                        identities: [selectionId]
+                    });
+                }
+            });
 
             rowNodes.push(rowElement);
         }
