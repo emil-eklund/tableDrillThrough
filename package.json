@@ -11,7 +11,7 @@
     "package": "npx powerbi-visuals-tools package"
   },
   "dependencies": {
-    "powerbi-visuals-api": "5.4.0"
+    "powerbi-visuals-api": "5.9.0"
   },
   "devDependencies": {
     "ts-loader": "^9.5.1",
